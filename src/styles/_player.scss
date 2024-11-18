@@ -1,0 +1,110 @@
+.player {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+
+  span {
+    display: inline-block;
+  }
+
+  &-header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &-play {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 0.7rem;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 0.4rem 0 0.4rem 0.7rem;
+    transition: 150ms all ease;
+    cursor: pointer;
+    caret-color: transparent;
+
+    &.playing {
+      border-style: double;
+      border-width: 0px 0 0px 0.7rem;
+    }
+  }
+
+  &-title {
+    columns: #fff;
+    font-size: 1rem;
+    margin-left: 1.6rem;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &-spotify {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      margin-left: auto;
+      width: 2rem;
+      height: 2rem;
+      background-repeat: no-repeat;
+      background-size: 1.25rem;
+      background-position: center;
+      left: 8rem;
+      top: -0.2rem;
+      position: absolute;
+      // white spotify
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.875' height='34.875' viewBox='0 0 34.875 34.875'%3E%3Cpath id='Icon_awesome-spotify' data-name='Icon awesome-spotify' d='M17.438.563A17.438,17.438,0,1,0,34.875,18,17.444,17.444,0,0,0,17.438.563Zm7.08,25.657a1.342,1.342,0,0,1-.752-.253c-4.388-2.644-9.492-2.756-14.534-1.723a4.54,4.54,0,0,1-.837.183,1.1,1.1,0,0,1-1.111-1.111,1.114,1.114,0,0,1,.956-1.181C14,20.862,19.884,20.974,24.9,23.977a1.189,1.189,0,0,1,.682,1.16,1.062,1.062,0,0,1-1.069,1.083Zm1.891-4.612a1.736,1.736,0,0,1-.865-.3A22.786,22.786,0,0,0,8.768,19.245a2.9,2.9,0,0,1-.837.183,1.365,1.365,0,0,1-1.364-1.364,1.383,1.383,0,0,1,1.09-1.455,23.65,23.65,0,0,1,6.877-.956,24.613,24.613,0,0,1,12.445,3.2,1.466,1.466,0,0,1,.795,1.385,1.362,1.362,0,0,1-1.364,1.371Zm2.18-5.358a1.617,1.617,0,0,1-.907-.274c-5.006-2.988-13.957-3.705-19.751-2.088a3.34,3.34,0,0,1-.907.183A1.623,1.623,0,0,1,5.386,12.41a1.661,1.661,0,0,1,1.223-1.68,29.469,29.469,0,0,1,8.262-1.069c5.133,0,10.512,1.069,14.442,3.361a1.651,1.651,0,0,1,.907,1.589,1.629,1.629,0,0,1-1.631,1.638Z' transform='translate(0 -0.563)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    }
+  }
+
+  &-spotify {
+    //     margin-left: auto;
+    // width: 2rem;
+    // height: 2rem;
+    // background-repeat: no-repeat;
+    // background-size: 1.25rem;
+    // background-position: center;
+    &::after {
+      // black spotify
+      // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31.033' height='31.033' viewBox='0 0 31.033 31.033'%3E%3Cpath id='Icon_awesome-spotify' data-name='Icon awesome-spotify' d='M15.517.563A15.517,15.517,0,1,0,31.033,16.079,15.522,15.522,0,0,0,15.517.563Zm6.3,22.831a1.194,1.194,0,0,1-.669-.225c-3.9-2.353-8.447-2.453-12.933-1.533a4.04,4.04,0,0,1-.745.163.974.974,0,0,1-.989-.989.991.991,0,0,1,.851-1.051c5.124-1.132,10.361-1.032,14.828,1.639a1.058,1.058,0,0,1,.607,1.032.945.945,0,0,1-.951.964Zm1.683-4.1a1.545,1.545,0,0,1-.77-.263A20.276,20.276,0,0,0,7.8,17.187a2.577,2.577,0,0,1-.745.163,1.215,1.215,0,0,1-1.214-1.214,1.231,1.231,0,0,1,.97-1.3,21.045,21.045,0,0,1,6.119-.851,21.9,21.9,0,0,1,11.074,2.847,1.3,1.3,0,0,1,.707,1.233,1.212,1.212,0,0,1-1.214,1.22Zm1.94-4.768a1.439,1.439,0,0,1-.807-.244c-4.455-2.659-12.42-3.3-17.575-1.858a2.972,2.972,0,0,1-.807.163,1.444,1.444,0,0,1-1.458-1.477,1.478,1.478,0,0,1,1.089-1.5,26.223,26.223,0,0,1,7.352-.951c4.567,0,9.354.951,12.851,2.991a1.469,1.469,0,0,1,.807,1.414,1.45,1.45,0,0,1-1.452,1.458Z' transform='translate(0 -0.563)'/%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+.timeline {
+  width: 100%;
+  border-top: 2px solid rgba(255, 255, 255, 0.658);
+  position: relative;
+  cursor: pointer;
+
+  &-progress {
+    border-top: 2px solid #fff;
+    position: absolute;
+    top: -2px;
+    z-index: 5;
+  }
+
+  &-indicator {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.4rem;
+    position: absolute;
+    cursor: pointer;
+    z-index: 5;
+
+    top: -0.35rem;
+    background-color: white;
+  }
+}
+
+.timings {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-top: 1rem;
+}

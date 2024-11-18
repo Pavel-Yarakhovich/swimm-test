@@ -1,0 +1,46 @@
+@import url('./markdown.css');
+@import url('./hover-button.css');
+@import url('./CSSTransition-group.css');
+@import url('./utils.css');
+
+html {
+  overflow: hidden;
+}
+
+canvas {
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-overflow-scrolling: touch;
+}
+
+#gatsby-focus-wrapper,
+#___gatsby {
+  height: 100%;
+}
+
+.overflow-hidden-important {
+  overflow: hidden !important;
+}
+
+.hide-scrollbar *:not(.show-scrollbar)::-webkit-scrollbar,
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.clip-circle {
+  clip-path: circle(5rem);
+  transition: clip-path 1s;
+}
+
+.clip-full {
+  clip-path: circle(500rem);
+}
+
+.object-cover-child > * {
+  object-fit: cover;
+}

@@ -1,0 +1,16 @@
+<svg
+    width="0"
+    height="0"
+    
+
+    preserveAspectRatio="none"
+  >
+    <defs>
+  		<clipPath id="clip-path" >
+      <path
+        fill="#000"
+        d="M 1.753 -0 V 1.041 H 0.679 V -0 H 0 V 3.773 H 0.679 V 3.334 H 1.754 V 3.773 H 2.908 V -0 H 1.753 Z"
+      />
+          </clipPath>
+          </defs>
+  </svg>

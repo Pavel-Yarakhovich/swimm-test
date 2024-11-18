@@ -1,0 +1,20 @@
+.markdown {
+  white-space: pre-wrap;
+}
+
+.markdown > * {
+  white-space: normal;
+}
+.markdown > ul {
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+.wysiwyg h3 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.wysiwyg a {
+  border-bottom: 1px solid currentColor;
+}

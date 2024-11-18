@@ -1,0 +1,3 @@
+.overlay-player video {
+  @apply object-cover !h-full !w-full absolute top-0 left-0;
+}

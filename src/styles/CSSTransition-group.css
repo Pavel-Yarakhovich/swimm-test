@@ -1,0 +1,22 @@
+.fade-enter,
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active,
+.fade-appear-active {
+  opacity: 1;
+  transition: all 800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  /* transition: opacity 1000ms cubic-bezier(0.455, 0.03, 0.515, 0.955) 800ms; */
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: all 800ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* .fade-enter-done */

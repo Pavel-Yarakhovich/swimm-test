@@ -1,0 +1,25 @@
+{
+  "scroll_continue": "Scroll to continue",
+  "click_continue": "click to continue",
+  "nav": {
+    "map": "Map",
+    "collections": "Collections",
+    "play_audio": "Play audio",
+    "start": "Start your journey"
+  },
+  "gallery": { "readmore": "Read more" },
+  "map": {
+    "visited": "Visited",
+    "explore": "Yet to Explore"
+  },
+  "experience": {
+    "back": "Or go back",
+    "history": "History",
+    "explore_more": "Discover our history",
+    "next": "Discover the next location"
+  },
+  "notfound": {
+    "title": "Page not found",
+    "back": "Back to home"
+  }
+}

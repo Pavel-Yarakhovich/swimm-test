@@ -1,0 +1,21 @@
+{
+  "scroll_continue": "Scroll om verder te gaan",
+  "click_continue": "klik hier om verder te gaan",
+  "nav": {
+    "map": "carte",
+    "collections": "collections",
+    "start": "Commencer l'histoire",
+    "play_audio": "Commence l'audio"
+  },
+  "gallery": { "readmore": "Lire plus" },
+  "map": {
+    "visited": "A visité",
+    "explore": "Encore à explorer"
+  },
+  "experience": {
+    "back": "Ou revenir en arrière",
+    "history": "Histoire",
+    "explore_more": "Découvrez notre histoire",
+    "next": "Découvrez le prochain emplacement"
+  }
+}

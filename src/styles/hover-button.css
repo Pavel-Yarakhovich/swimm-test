@@ -1,0 +1,111 @@
+.hover-btn,
+.hover-btn-invert {
+  /* display: inline-flex; */
+  justify-content: center;
+  align-items: center;
+  /* height: 2em; */
+  border-radius: 1000rem;
+  /* overflow: hidden; */
+  pointer-events: auto;
+  font-size: 23px;
+}
+
+.hover-btn:not(.no-hover):hover .hover-btn-content {
+  color: black;
+  fill: black;
+}
+
+.hover-btn-invert:not(.no-hover):hover .hover-btn-content {
+  color: white;
+  fill: white;
+}
+
+.hover-btn-border,
+.btn-border-drip {
+  width: 100%;
+  height: 100%;
+  border-radius: 100rem;
+  position: absolute;
+  border: 1px solid white;
+}
+
+.btn-border-drip {
+  animation-name: drip;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: both; */
+}
+
+@keyframes drip {
+  from {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+  30% {
+    opacity: 0;
+    width: 120%;
+    height: 120%;
+  }
+  to {
+    opacity: 0;
+    width: 120%;
+    height: 120%;
+  }
+}
+
+.hover-btn-invert .hover-btn-border {
+  border: 1px solid black;
+}
+
+.hover-btn-content {
+  color: white;
+  fill: white;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  transition:
+    color 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+    fill 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+    transform 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.hover-btn-invert .hover-btn-content {
+  color: black;
+  fill: black;
+}
+
+.hover-btn:hover .hover-btn-bg,
+.hover-btn-invert:hover .hover-btn-bg {
+  transform: translate(-50%, calc(-100%)) scale(1.2);
+  transition-duration: 0.65s;
+  transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.hover-btn:not(.no-hover):hover .animate-border,
+.hover-btn-invert .animate-border {
+  transition: filter 0.65s;
+  filter: invert(0%);
+}
+
+.hover-btn:not(.no-hover):hover .animate-border,
+.hover-btn-invert:hover .animate-border {
+  filter: invert(100%);
+}
+
+.hover-btn-bg {
+  top: calc(100% + 1px);
+  left: 50%;
+  position: absolute;
+  width: 105%;
+  aspect-ratio: 1/1;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%) scale(0.6, 0.4);
+  transform-origin: 50% 0;
+  transition: transform 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.hover-btn-invert .hover-btn-bg {
+  background: #000;
+}
