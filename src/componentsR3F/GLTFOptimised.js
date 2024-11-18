@@ -37,7 +37,7 @@ export function Model({
   if (!isLoaded.current) {
     if (progress === 100) isLoaded.current = true;
     document.dispatchEvent(
-      new CustomEvent('ThreeLoading', {
+      new CustomEvent('ThreeLoadingEvent', {
         detail: {
           progress: Math.round(progress),
         },
